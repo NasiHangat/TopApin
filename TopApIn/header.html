@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Gambar/TopApIn.png">
+    <title>TopUpIn - Top Up Game Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .top-bar {
+            background-color: #1a1a1a;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .search-container {
+            flex-grow: 1;
+            margin-right: 20px;
+            position: relative;
+        }
+        
+        .search-bar {
+            background-color: #444;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 15px 10px 40px;
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+        
+        .user-actions {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .currency-button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .chat-button {
+            background-color: #6a359c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .navigation {
+            background-color: #6a359c;
+            padding: 15px 20px;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img width="50" height="50" src="Gambar/TopApIn.png" alt="logo">
+        <div class="search-container">
+            <span class="search-icon">⚲</span>
+            <input type="text" class="search-bar" placeholder="Search ...">
+        </div>
+        
+        <div class="user-actions">
+            <button class="currency-button">ID/IDR</button>
+            <button class="chat-button">
+                <span style="margin-right: 5px;">💬</span>
+                CHAT CS
+            </button>
+        </div>
+    </div>
+    
+    <nav class="navigation">
+        <a class="nav-link">HOMEPAGE</a>
+        <a class="nav-link">FORM TOP UP</a>
+        <a class="nav-link">KONFIRMASI PESANAN</a>
+    </nav>
+</body>
+</html>

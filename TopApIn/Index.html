@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Gambar/TopApIn.png">
+    <title>TopUpIn - Top Up Game Online</title>
+    <link rel="stylesheet" href="Style/styles.css">
+    <script src="Style/script.js" defer></script>
+</head>
+<body>
+    <iframe src="header.html" width="100%" frameborder="0"></iframe>
+    <main>
+        <div class="banner-container">
+            <div class="banner-slider">
+                <div class="banner-slide"><img src="Gambar/1.png" alt="Banner 1"></div>
+                <div class="banner-slide"><img src="Gambar/2.png" alt="Banner 2"></div>
+                <div class="banner-slide"><img src="Gambar/1.png" alt="Banner 3"></div>
+            </div>
+        
+            <button class="banner-prev" onclick="moveBanner(-1)">&#10094;</button>
+            <button class="banner-next" onclick="moveBanner(1)">&#10095;</button>
+        
+            <div class="banner-dots">
+                <span class="banner-dot" onclick="setBanner(0)"></span>
+                <span class="banner-dot" onclick="setBanner(1)"></span>
+                <span class="banner-dot" onclick="setBanner(2)"></span>
+            </div>
+        </div>
+             
+        <section id="games" class="game-list1">
+            <h2 class="popular-container">POPULER SEKARANG</h2>
+            <div class="game-list">
+                <h2 >Berikut adalah beberapa produk yang paling populer saat ini.</h2>
+                <div class="games-container1">
+                <a href="GI.html" class="popular-container">
+                    <div class="game-item1" href="">
+                        <img src="Gambar/Genshin_Impact.jpg" alt="Genshin Impact">
+                        <div class="game-info1">
+                            <div class="game-name1">Genshin Impact</div>
+                            <div class="game-description1">Game RPG dari Hoyoverse</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Wuwa.html" class="popular-container">
+                    <div class="game-item1">
+                        <img src="Gambar/Wuthering Waves.png" alt="Wuthering Waves">
+                        <div class="game-info1">
+                            <div class="game-name1">Wuthering Waves</div>
+                            <div class="game-description1">Game aksi open-world</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="HSR.html" class="popular-container">
+                    <div class="game-item1">
+                        <img src="Gambar/HSR.png" alt="Honkai: Star Rail">
+                        <div class="game-info1">
+                            <div class="game-name1">Honkai: Star Rail</div>
+                            <div class="game-description1">Game RPG turn-based</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Honkai.html" class="popular-container">
+                    <div class="game-item1">
+                        <img src="Gambar/honkai impact.png" alt="Honkai Impact 3rd">
+                        <div class="game-info1">
+                            <div class="game-name1">Honkai Impact 3rd</div>
+                            <div class="game-description1">Game aksi dari Hoyoverse</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="MLBB.html" class="popular-container">
+                    <div class="game-item1">
+                        <img src="Gambar/MLBB.jpeg" alt="Mobile Legends">
+                        <div class="game-info1">
+                            <div class="game-name1">Mobile Legends</div>
+                            <div class="game-description1">Game MOBA 5v5</div>
+                        </div>
+                    </div>
+                </a><br>
+                <a href="FF.html" class="popular-container">
+                    <div class="game-item1 popular-item">
+                        <img src="Gambar/FF.jpeg" alt="Free Fire">
+                        <div class="game-info1">
+                            <div class="game-name1">Free Fire</div>
+                            <div class="game-description1">Battle royale mobile</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="PUBG.html" class="popular-container">
+                    <div class="game-item1 popular-item">
+                        <img src="Gambar/PUBG.jpeg" alt="PUBG">
+                        <div class="game-info1">
+                            <div class="game-name1">PUBG</div>
+                            <div class="game-description1">Battle royale realistis</div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <div class="game-list">
+        <h2>Top Up Game</h2>
+        <div class="games-container">
+            <div class="game-item">
+                <img src="Gambar/Genshin Impact.jpeg" alt="Genshin Impact">
+                <div class="game-name">Genshin Impact</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/Wuthering Waves.png" alt="Wuthering Waves">
+                <div class="game-name">Wuthering Waves</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/HSR.png" alt="Honkai: Star Rail">
+                <div class="game-name">Honkai: Star Rail</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/honkai impact.png" alt="Honkai Impact 3rd">
+                <div class="game-name">Honkai Impact 3rd</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/MLBB.jpeg" alt="Mobile Legends">
+                <div class="game-name">Mobile Legends</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/FF.jpeg" alt="Free Fire">
+                <div class="game-name">Free Fire</div>
+            </div>
+            <div class="game-item">
+                <img src="Gambar/PUBG.jpeg" alt="PUBG">
+                <div class="game-name">PUBG</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <p>&copy; 2025 TopUpIn. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
