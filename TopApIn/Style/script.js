@@ -45,30 +45,24 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.toggle("light-mode");
     });
 });
-let bannerIndex = 0;
-const banners = document.querySelectorAll(".banner-slide");
-const bannerSlider = document.querySelector(".banner-slider");
-const dots = document.querySelectorAll(".banner-dot");
+let index = 0;
+        const slides = document.getElementById("slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
 
-function updateBanner() {
-    bannerSlider.style.transform = `translateX(${-bannerIndex * 100}%)`;
+        function showSlide(i) {
+            index = (i + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
 
-    // Update active dot
-    dots.forEach(dot => dot.classList.remove("active"));
-    dots[bannerIndex].classList.add("active");
-}
+        function nextSlide() {
+            showSlide(index + 1);
+        }
 
-function moveBanner(step) {
-    bannerIndex += step;
+        function prevSlide() {
+            showSlide(index - 1);
+        }
 
-    if (bannerIndex < 0) {
-        bannerIndex = banners.length - 1;
-    } else if (bannerIndex >= banners.length) {
-        bannerIndex = 0;
-    }
-
-    updateBanner();
-}
+        setInterval(nextSlide, 10000);
 
 setInterval(() => moveBanner(1), 3000);
 
@@ -76,6 +70,41 @@ function setBanner(index) {
     bannerIndex = index;
     updateBanner();
 }
-
 updateBanner();
 
+<<<<<<< HEAD
+=======
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector(".quantity-input");
+    const plusButton = document.querySelector(".plus");
+    const minusButton = document.querySelector(".minus");
+
+    plusButton.addEventListener("click", function () {
+        let value = parseInt(input.value, 10);
+        input.value = value + 1;
+    });
+
+    minusButton.addEventListener("click", function () {
+        let value = parseInt(input.value, 10);
+        if (value > 1) {
+            input.value = value - 1;
+        }
+    });
+});
+
+document.getElementById("goToB").addEventListener("click", function () {
+    // Simulasi: Halaman B tidak ditemukan
+    let halamanB = false; // Anggap halaman B tidak ada
+
+    if (!halamanB) {
+        document.getElementById("popup").style.display = "flex";
+    } else {
+        window.location.href = "halamanB.html"; // Jika ada, pindah ke B
+    }
+});
+
+// Tombol kembali ke A
+document.getElementById("backToA").addEventListener("click", function () {
+    document.getElementById("popup").style.display = "none";
+});
+>>>>>>> 7ec26efee3ca1fa7b02ca253c17b37a99ed68e07
