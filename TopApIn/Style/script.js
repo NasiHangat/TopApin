@@ -78,3 +78,4 @@ function setBanner(index) {
 }
 
 updateBanner();
+
