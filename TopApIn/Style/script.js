@@ -107,4 +107,3 @@ document.getElementById("goToB").addEventListener("click", function () {
 document.getElementById("backToA").addEventListener("click", function () {
     document.getElementById("popup").style.display = "none";
 });
->>>>>>> 7ec26efee3ca1fa7b02ca253c17b37a99ed68e07
