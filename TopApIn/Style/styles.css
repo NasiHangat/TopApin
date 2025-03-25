@@ -997,3 +997,154 @@ a {
         grid-template-columns: repeat(1, 1fr); /* 1 kolom di layar kecil */
     }
 }
+
+
+/* Login */
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.login-container {
+  background-color: #1e1e1e;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  width: 500px; 
+  text-align: left;
+}
+.login-container h2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.login-container h2 span {
+  margin-right: 10px;
+  font-size: 24px;
+}
+label {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-top: 25px;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.login-btn {
+  display: block;
+  width: 30%;
+  padding: 14px;
+  margin: 30px auto;
+  background-color: #6a3db8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Poppins-SemiBold", Helvetica, sans-serif;
+}
+.login-btn:hover {
+  background-color: #5a2fa0;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  color: #6a3db8;
+}
+
+/* Register */
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.register-container {
+  background-color: #1e1e1e;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  width: 500px; 
+  text-align: left;
+}
+.register-container h2 {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.back-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.back-btn:hover {
+  color: #6a3db8;
+}
+label {
+  display: block;
+  color: white;
+  font-size: 16px;
+  margin-top: 25px;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.register-btn {
+  display: block;
+  width: 60%;
+  padding: 14px;
+  margin: 30px auto;
+  background-color: #6a3db8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.register-btn:hover {
+  background-color: #5a2fa0;
+}
