@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedPrice = 0;
     let qrisPrice = document.getElementById("qris-price");
     let danaPrice = document.getElementById("dana-price");
+    let mastercardPrice = document.getElementById("mastercard-price");
     let paymentPrice = document.getElementById("payment-price");
     let helpText = document.querySelector(".help-text");
     let promoInput = document.getElementById("promo-code");
@@ -11,9 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Daftar kode promo & diskon
     const promoCodes = {
-        "PROMO10": 10,  // Diskon 10%
-        "PROMO25": 25,  // Diskon 25%
-        "DISKON50": 50   // Diskon 50%
+        "PROMO10": 10,  
+        "PROMO25": 25, 
+        "DISKON50": 50   
+        "AZISGANTENG": 100
     };
 
     // Fungsi update total harga
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Update semua metode pembayaran
         qrisPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
         danaPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
+        mastercardPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
         paymentPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
     }
 
