@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     let selectedPrice = 0;
+    let mastercardPrice = document.getElementById("mastercard-price");
     let qrisPrice = document.getElementById("qris-price");
     let danaPrice = document.getElementById("dana-price");
-    let mastercardPrice = document.getElementById("mastercard-price");
     let paymentPrice = document.getElementById("payment-price");
     let helpText = document.querySelector(".help-text");
     let promoInput = document.getElementById("promo-code");
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Update semua metode pembayaran
+        mastercardPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
         qrisPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
         danaPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
-        mastercardPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
         paymentPrice.textContent = "Rp. " + totalPrice.toLocaleString("id-ID");
     }
 
