@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const promoCodes = {
         "PROMO10": 10,  
         "PROMO25": 25, 
-        "DISKON50": 50   
+        "DISKON50": 50,   
         "AZISGANTENG": 100
     };
 
